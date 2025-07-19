@@ -14,7 +14,7 @@ https://roadmap.sh/projects/task-tracker
 
 1. To install, clone the repo.
 
-`git clone $LINK`
+`git clone https://github.com/Pandie-pantsu/Task-Tracker-in-GO`
 
 2. In the folder where you downloaded the repo, run:
 
