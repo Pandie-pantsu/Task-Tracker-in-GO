@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+// read-eval-print-loop (repl) engine.
 func startRepl(todos *Todos) {
 
 	scanner := bufio.NewScanner(os.Stdin)
@@ -118,11 +119,13 @@ func startRepl(todos *Todos) {
 	}
 }
 
+// creates a cliCommand struct 
 type cliCommand struct {
 	name        string
 	description string
 }
 
+// this returns a map of available cliCommands for the help function to use
 func getCommands() map[string]cliCommand {
 	return map[string]cliCommand{
 		"help": {
@@ -160,6 +163,7 @@ func getCommands() map[string]cliCommand {
 	}
 }
 
+// cleans user input
 func cleanInput(str string) []string {
 
 	lowered := strings.ToLower(str)
