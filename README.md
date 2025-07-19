@@ -16,7 +16,7 @@ https://roadmap.sh/projects/task-tracker
 
 `git clone https://github.com/Pandie-pantsu/Task-Tracker-in-GO`
 
-2. In the folder where you downloaded the repo, run:
+2. In the Task-Tracker-in-GO folder, run:
 
 `go build ./...`
 
@@ -34,7 +34,21 @@ JSON file does not exist! Creating a new one...
 task-cli:
 ```
 
+## Usage
 
+```
+task-cli: add task to do
+Task added successfully (ID: 1)
+
+task-cli: add things to see
+Task added successfully (ID: 2)
+
+task-cli: list
+
+| ID# 1 | Task: task to do | Status: todo | Created: 07-19-2025 @ 12:45:17 PM | Updated:  |
+| ID# 2 | Task: things to see | Status: todo | Created: 07-19-2025 @ 12:45:27 PM | Updated:  |
+
+```
 
 ## Available commmands
 
